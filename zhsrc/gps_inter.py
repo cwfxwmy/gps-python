@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @File  : gps_inter.py
-# @Author: wmy
-# @Date  : 2018/2/2
+# -----------------------------------------------------------
+#   @File   : gps_inter.py
+#   @Author : wmy
+#   @Date   : 2018/2/2
 #
 #   format:
 #   $GPGGA,031351.000,3355.3471,N,11741.7128,W,1,07,1.4,112.2,M,-33.7,M,,0000*6C 用这个
