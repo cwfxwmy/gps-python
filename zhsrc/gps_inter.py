@@ -4,10 +4,9 @@
 # @Author: wmy
 # @Date  : 2018/2/2
 #
+#   format:
 #   $GPGGA,031351.000,3355.3471,N,11741.7128,W,1,07,1.4,112.2,M,-33.7,M,,0000*6C 用这个
-# test gps data
-gps_test_data = "$GPGGA,031351.000,3355.3471,N,11741.7128,W,1,07,1.4,112.2,M,-33.7,M,,0000*6C "
-
+# ------------------------------------------------------------
 class Gps:
     gps_dict = {
         'form': 0,
@@ -49,7 +48,10 @@ class Gps:
         print("----------invalid GPS data as follows-------------")
         for i in self.gps_dict:
             print("-> %s: %s" % (i, self.gps_dict[i]))
-
+# --------------------------------------------------------------------
+#
+# test gps data
+gps_test_data = "$GPGGA,031351.000,3355.3471,N,11741.7128,W,1,07,1.4,112.2,M,-33.7,M,,0000*6C "
 gps = Gps(gps_test_data)
 gps.getPos()
 gps.disInfo()
